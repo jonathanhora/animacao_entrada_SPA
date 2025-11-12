@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
+}
+
+.hero{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: start;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.logo{
+    width: 60px;
+    margin: -80px 0 60px;;
+}
+
+h1, h2{
+    font-family: "Orelo", sans-serif;
+}
+
+.titulo, .subtitulo{
+    font-size: 108px; 
+}
+
+span{
+    background: linear-gradient( #ffd96d, #ffcb05, #ff9d05);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    line-height: 32px;
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: linear-gradient( #ffd96d, #ffcb05, #ff9d05);
+    margin: 40px 0 100px;
+}
+
+.cards{
+    background-image: url(assets/detalhe.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin: 0 -40px;
+    padding: 0 40px;
+    gap: 20px;
+    width: calc(100% + 80px);
+}
+
+button,
+.card{
+    padding: 8px 8px 8px 24px;
+    border-radius: 32px;
+    font-size: 18px;    
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card{
+    background: rgba(36, 28, 13, 0.62);
+    box-shadow: 0px 5px 14.2px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8.050000190734863px);
+    margin: -21px 0;
+    color: white;
+}
+
+.direita{
+    position: relative;
+    flex: 1;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 64px;
+}
+
+.produto{
+    position: absolute;
+    top: 30px;
+    right: 104px;
+    filter: drop-shadow(0px 16px 20px rgba(0, 0, 0, 0.35));
+}
+
+.icon{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    filter: drop-shadow(0px 16px 20px rgba(0, 0, 0, 0.17));
+    
+}
+
+
