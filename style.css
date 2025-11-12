@@ -61,6 +61,7 @@ button{
     outline: none;
     background: linear-gradient( #ffd96d, #ffcb05, #ff9d05);
     margin: 40px 0 100px;
+    cursor: pointer;
 }
 
 .cards{
@@ -90,7 +91,9 @@ button,
     backdrop-filter: blur(8.050000190734863px);
     margin: -21px 0;
     color: white;
+    user-select: none;
 }
+
 
 .direita{
     position: relative;
@@ -106,7 +109,7 @@ button,
 
 .produto{
     position: absolute;
-    top: 30px;
+    top: 50px;
     right: 125px;
     height: 750px;
     filter: drop-shadow(0px 16px 20px rgba(0, 0, 0, 0.35));

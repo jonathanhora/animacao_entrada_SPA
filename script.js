@@ -1,3 +1,49 @@
+const cards = document.querySelectorAll(".card");
+const button = document.querySelector("button");
+
+cards.forEach((card) => {
+    notHoverScale(card);
+    hoverScale(card);
+    
+});
+
+notHoverScale(button);
+hoverScale(button);
+
+function hoverScale(element){
+    element.addEventListener("mouseenter", () => {
+        gsap.to(element, {
+            scale: 1.05,
+            duration: .3
+        });
+
+        if(element.tagName == "BUTTON"){{
+        gsap.to(element, {
+            backgroundImage: "linear-gradient(#ff9d05, #ffcb05, #ffd96d)",
+            duration: 0.4
+        })
+    }}
+    });
+
+}
+
+function notHoverScale(element){
+    element.addEventListener("mouseleave", () => {
+        gsap.to(element, {
+            scale: 1,
+            duration: .3
+        });
+
+        if (element.tagName === "BUTTON") {
+      gsap.to(element, {
+        backgroundImage: "linear-gradient(#ffd96d, #ffcb05, #ff9d05)",
+        duration: 0.4
+    })}
+    });
+
+    
+}
+
 const tl = gsap.timeline(defaults={
     duration: .5
 });
