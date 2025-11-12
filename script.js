@@ -23,7 +23,8 @@ tl.from(".titulo", {
 
 .from(".produto", {
     height: 0,
-    padding:0
+    padding:0,
+    duration: .7
 })
 
 .from(".icon", {
